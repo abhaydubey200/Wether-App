@@ -10,7 +10,7 @@ const Weather = () => {
 
   const fetchWeather = async () => {
     try {
-      const API_KEY = 'e0398f027750c9e170d4d0aa28493750'; // Replace with your OpenWeatherMap API key
+      const API_KEY = 'e0398f027750c9e170d4d0aa28493750'; 
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
       setWeather(response.data);
       setError('');
